@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2448281035872523284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2448281035872523283}
+  - component: {fileID: 2448281035872523282}
+  m_Layer: 0
+  m_Name: PlatformGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2448281035872523283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448281035872523284}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2448281035872523282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448281035872523284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ad03604f5b32dc0b7978bcc0274a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  area: 4
+  minSpawnTime: 0.75
+  maxSpawnTime: 1.25
+  platformsSpeed: 5
+  dirtPlatformMinLength: 4
+  dirtPlatformMaxLength: 8
+  dirtPlatformProbability: 0.3
+  dirtPlatformGenerator: {fileID: 3147613329685018284, guid: 9f4f22c9e45d09c698b8548fcf87eabd,
+    type: 3}
+  victoryProbability: 0.05
+  victory: {fileID: 690931626246690636, guid: 7b278e8c81316cdd9a3bd62a03ed4dda, type: 3}
+  treasureProbability: 0.2
+  treasureGenerator: {fileID: 3472482727420772589, guid: 5a5b7af88a7e0459183d7699910219c2,
+    type: 3}
+  basicPlatformMinLength: 1
+  basicPlatformMaxLength: 2
+  basicPlatformProbability: 0.3
+  basicPlatformGenerator: {fileID: 5517163787372799466, guid: 7a9a44c92666f3275849e0db1ea24c67,
+    type: 3}
+  hybridProbability: 0.15
+  hybridGenerator: {fileID: 7490415512207606022, guid: 60f2944168a32375f87fdf86620caa1b,
+    type: 3}
+  speedBump: 1
+  speedBumpTimes:
+  - 1
+  - 2.5
+  - 4
+  - 6.5
+  - 9.5
+  _timer: 0
+  _lastPosition: 0
+  _currentSpeedBump: 0
